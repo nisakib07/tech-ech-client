@@ -42,7 +42,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className=" text-xl">TechSaak</a>
+        <a className=" text-xl">TechEch</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
