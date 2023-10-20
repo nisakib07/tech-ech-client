@@ -3,48 +3,96 @@
     "id": 1,
     "name": "Apple",
     "image": "https://i.ibb.co/d5HB9Cp/apple.jpg",
-    "slider1": "https://i.ibb.co/qNWBSTP/apple-banner1.jpg",
-    "slider2": "https://i.ibb.co/qNWBSTP/apple-banner1.jpg",
-    "slider3": "https://i.ibb.co/qNWBSTP/apple-banner1.jpg"
+    "sliders": [
+      {
+        "image": "https://i.ibb.co/KWjcMM2/apple-banner-1.png"
+      },
+      {
+        "image": "https://i.ibb.co/XyT079b/apple-banner-2.png"
+      },
+      {
+        "image": "https://i.ibb.co/S6Q931N/apple-banner-3.png"
+      }
+    ]
   },
   {
     "id": 2,
     "name": "Samsung",
     "image": "https://i.ibb.co/98Q86NC/samsung.png",
-    "slider1": "https://i.ibb.co/c1MRttb/samsung-banner-1.jpg",
-    "slider2": "https://i.ibb.co/c1MRttb/samsung-banner-1.jpg",
-    "slider3": "https://i.ibb.co/c1MRttb/samsung-banner-1.jpg"
+    "sliders": [
+      {
+        "image": "https://i.ibb.co/KqJg7Nb/samsung-banner-1.png"
+      },
+      {
+        "image": "https://i.ibb.co/KqJg7Nb/samsung-banner-1.png"
+      },
+      {
+        "image": "https://i.ibb.co/KqJg7Nb/samsung-banner-1.png"
+      }
+    ]
   },
   {
     "id": 3,
     "name": "Google",
     "image": "https://i.ibb.co/KbpLP3k/google.png",
-    "slider1": "https://i.ibb.co/PwzJhyH/google-banner-1.jpg",
-    "slider2": "https://i.ibb.co/PwzJhyH/google-banner-1.jpg",
-    "slider3": "https://i.ibb.co/PwzJhyH/google-banner-1.jpg"
+    "sliders": [
+      {
+        "image": "https://i.ibb.co/PwzJhyH/google-banner-1.jpg"
+      },
+      {
+        "image": "https://i.ibb.co/PwzJhyH/google-banner-1.jpg"
+      },
+      {
+        "image": "https://i.ibb.co/PwzJhyH/google-banner-1.jpg"
+      }
+    ]
   },
   {
     "id": 4,
     "name": "Microsoft",
     "image": "https://i.ibb.co/sWG4dYK/microsoft.jpg",
-    "slider1": "https://i.ibb.co/898gxDV/mico-banner-1.jpg",
-    "slider2": "https://i.ibb.co/898gxDV/mico-banner-1.jpg",
-    "slider3": "https://i.ibb.co/898gxDV/mico-banner-1.jpg"
+    "sliders": [
+      {
+        "image": "https://i.ibb.co/898gxDV/mico-banner-1.jpg"
+      },
+      {
+        "image": "https://i.ibb.co/898gxDV/mico-banner-1.jpg"
+      },
+      {
+        "image": "https://i.ibb.co/898gxDV/mico-banner-1.jpg"
+      }
+    ]
   },
   {
     "id": 5,
     "name": "Amazon",
     "image": "https://i.ibb.co/M7vTb80/amazon.png",
-    "slider1": "https://i.ibb.co/Z64CXmt/amazon-banner-1.jpg",
-    "slider2": "https://i.ibb.co/Z64CXmt/amazon-banner-1.jpg",
-    "slider3": "https://i.ibb.co/Z64CXmt/amazon-banner-1.jpg"
+    "sliders": [
+      {
+        "image": "https://i.ibb.co/Z64CXmt/amazon-banner-1.jpg"
+      },
+      {
+        "image": "https://i.ibb.co/Z64CXmt/amazon-banner-1.jpg"
+      },
+      {
+        "image": "https://i.ibb.co/Z64CXmt/amazon-banner-1.jpg"
+      }
+    ]
   },
   {
     "id": 6,
     "name": "Sony",
     "image": "https://i.ibb.co/ggrp1HC/sony.jpg",
-    "slider1": "https://i.ibb.co/JKBHRmV/sony-banner-1.jpg",
-    "slider2": "https://i.ibb.co/JKBHRmV/sony-banner-1.jpg",
-    "slider3": "https://i.ibb.co/JKBHRmV/sony-banner-1.jpg"
+    "sliders": [
+      {
+        "image": "https://i.ibb.co/JKBHRmV/sony-banner-1.jpg"
+      },
+      {
+        "image": "https://i.ibb.co/JKBHRmV/sony-banner-1.jpg"
+      },
+      {
+        "image": "https://i.ibb.co/JKBHRmV/sony-banner-1.jpg"
+      }
+    ]
   }
 ]
