@@ -32,7 +32,7 @@ const Login = () => {
     googleSignIn()
       .then(() => {
         toast.success("Signed In Successfully");
-        navigate(location?.state ? location.state : "/");
+        navigate("/");
       })
       .catch(() => {
         toast.error("Sign In Failed");
@@ -40,11 +40,11 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-pink-700">
+    <div>
       <div className="hero min-h-scree">
         <div className="hero-content flex-col">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-pink-200">Login now!</h1>
+            <h1 className="text-5xl font-bold text-white">Login now!</h1>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-pink-200 shadow-2xl">
             <form onSubmit={handleLoginSubmit} className="card-body">

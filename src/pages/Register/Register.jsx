@@ -42,11 +42,11 @@ const Register = () => {
       });
   };
   return (
-    <div className="bg-pink-700">
+    <div>
       <div className="hero min-h-scree">
         <div className="hero-content flex-col">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-pink-200">Register now!</h1>
+            <h1 className="text-5xl font-bold text-white">Register now!</h1>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-pink-200 shadow-2xl">
             <form onSubmit={handleRegisterSubmit} className="card-body">
@@ -58,7 +58,7 @@ const Register = () => {
                   type="text"
                   name="name"
                   placeholder="Enter your name"
-                  className="input input-bordered focus:text-pink-600 placeholder:font"
+                  className="input input-bordered focus:text-fuchsia-600 placeholder:font"
                   required
                 />
                 <label className="label">

@@ -13,11 +13,14 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import AuthProvider from "./Providers/AuthProvider";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import Cart from "./pages/Cart/Cart";
+import Error from "./pages/Error/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
@@ -69,6 +72,25 @@ const router = createBrowserRouter([
         ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/products1/${params._id}`),
+      },
+      // {
+      //   path: "/cart",
+      //   element: (
+      //     <PrivateRoute>
+      //       <Cart></Cart>
+      //     </PrivateRoute>
+      //   ),
+      //   loader: () => fetch("http://localhost:5000/cart"),
+      // },
+      {
+        path: "/cart/:username",
+        element: (
+          <PrivateRoute>
+            <Cart></Cart>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/cart/${params.username}`),
       },
     ],
   },

@@ -3,7 +3,17 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const Navbar = () => {
-  const { user, userSignOut } = useContext(AuthContext);
+  const { user, userSignOut, loader } = useContext(AuthContext);
+
+  if (loader) {
+    return (
+      <div className="text-center">
+        <span className="loading loading-infinity loading-lg"></span>
+      </div>
+    );
+  }
+  const email = user?.email ? user.email : "";
+  const username = email.split("@")[0] || null;
 
   const handleLogOut = () => {
     userSignOut();
@@ -18,6 +28,9 @@ const Navbar = () => {
         <NavLink to="/addProducts">Add Products</NavLink>
       </li>
       <li>
+        <NavLink to={`/cart/${username}`}>My Cart</NavLink>
+      </li>
+      <li>
         <NavLink to="/login">Login</NavLink>
       </li>
       <li>
@@ -26,7 +39,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 shadow-2xl rounded-lg">
+    <div className="navbar bg-transparent shadow-2xl">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
