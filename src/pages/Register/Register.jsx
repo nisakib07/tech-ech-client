@@ -29,10 +29,11 @@ const Register = () => {
     }
 
     createUser(email, password)
-      .then(() => {
+      .then((user) => {
         userSignOut();
         userProfileUpdate(name, photo);
         toast.success("Successfully Registered! Go to login!!!");
+        console.log(user.user);
         e.target.reset();
       })
       .catch((error) => {
