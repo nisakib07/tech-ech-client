@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const ShowProducts = ({ product }) => {
   const { _id, name, brand, type, price, description, rating, photo } = product;
@@ -25,8 +26,12 @@ const ShowProducts = ({ product }) => {
       </div>
 
       <div className="flex justify-around">
-        <button className="btn btn-primary">Details</button>
-        <button className="btn btn-info">Update</button>
+        <Link to={`/details/${_id}`}>
+          <button className="btn btn-primary">Details</button>
+        </Link>
+        <Link to={`/products1/updateProduct/${_id}`}>
+          <button className="btn btn-info">Update</button>
+        </Link>
       </div>
     </div>
   );
