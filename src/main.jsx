@@ -12,6 +12,7 @@ import Details from "./pages/Details/Details";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import AuthProvider from "./Providers/AuthProvider";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -33,23 +34,39 @@ const router = createBrowserRouter([
       },
       {
         path: "/addProducts",
-        element: <AddProducts></AddProducts>,
+        element: (
+          <PrivateRoute>
+            <AddProducts></AddProducts>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/products/:brand",
-        element: <Products></Products>,
+        element: (
+          <PrivateRoute>
+            <Products></Products>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/products/${params.brand}`),
       },
       {
         path: "/products1/updateProduct/:_id",
-        element: <UpdateProduct></UpdateProduct>,
+        element: (
+          <PrivateRoute>
+            <UpdateProduct></UpdateProduct>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/products1/${params._id}`),
       },
       {
         path: "/details/:_id",
-        element: <Details></Details>,
+        element: (
+          <PrivateRoute>
+            <Details></Details>
+          </PrivateRoute>
+        ),
         loader: ({ params }) =>
           fetch(`http://localhost:5000/products1/${params._id}`),
       },
