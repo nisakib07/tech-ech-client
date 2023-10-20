@@ -9,6 +9,9 @@ import AddProducts from "./pages/AddProducts/AddProducts";
 import Products from "./pages/Products/Products";
 import UpdateProduct from "./pages/UpdateProduct/UpdateProduct";
 import Details from "./pages/Details/Details";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
+import AuthProvider from "./Providers/AuthProvider";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +22,14 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: () => fetch("/brands.json"),
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       },
       {
         path: "/addProducts",
@@ -48,6 +59,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>{" "}
   </React.StrictMode>
 );
