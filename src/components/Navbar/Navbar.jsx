@@ -3,15 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const Navbar = () => {
-  const { user, userSignOut, loader } = useContext(AuthContext);
+  const { user, userSignOut } = useContext(AuthContext);
 
-  if (loader) {
-    return (
-      <div className="text-center">
-        <span className="loading loading-infinity loading-lg"></span>
-      </div>
-    );
-  }
   const email = user?.email ? user.email : "";
   const username = email.split("@")[0] || null;
 
@@ -63,35 +56,44 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className=" text-xl">TechEch</a>
+        <a className="font-bold text-2xl">TechEch</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        {user ? (
-          <>
-            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full">
-                <img
-                  src={
-                    user?.photoURL
-                      ? user.photoURL
-                      : "https://i.ibb.co/DCghjvD/profile.jpg"
-                  }
-                />
-              </div>
-            </label>
-            <p className="mr-2">{user.displayName}</p>
-            <button onClick={handleLogOut} className="btn">
-              Log Out
-            </button>
-          </>
-        ) : (
-          <Link to="/login">
-            <button className="btn">Login</button>
-          </Link>
-        )}
+        <div className="flex-none">
+          {user ? (
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img
+                    src={
+                      user?.photoURL
+                        ? user.photoURL
+                        : "https://i.ibb.co/DCghjvD/profile.jpg"
+                    }
+                  />
+                </div>
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li>
+                  <p>{user.displayName}</p>
+                </li>
+
+                <li>
+                  <a onClick={handleLogOut}>Logout</a>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <Link to="/login">
+              <button className="btn">Login</button>
+            </Link>
+          )}
+        </div>
       </div>
     </div>
   );

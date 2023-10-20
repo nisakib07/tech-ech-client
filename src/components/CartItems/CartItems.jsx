@@ -22,9 +22,12 @@ const CartItems = ({ cartItem, userCart, setUserCart }) => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/carts/${username}/${id}`, {
-          method: "DELETE",
-        })
+        fetch(
+          `https://assignmentb8-10-server.vercel.app/carts/${username}/${id}`,
+          {
+            method: "DELETE",
+          }
+        )
           .then((res) => res.json())
           .then((data) => {
             if (data.deletedCount > 0) {
@@ -40,7 +43,7 @@ const CartItems = ({ cartItem, userCart, setUserCart }) => {
 
   return (
     <div>
-      <div className="card card-side bg-base-100 shadow-xl flex items-center">
+      <div className="card card-side bg-fuchsia-400 shadow-2xl flex items-center mx-5 mt-5">
         <figure className="">
           <img className="h-[250px]" src={photo} alt="Movie" />
         </figure>
@@ -51,7 +54,7 @@ const CartItems = ({ cartItem, userCart, setUserCart }) => {
           <div className="card-actions justify-end">
             <button
               onClick={() => handleDelete(_id)}
-              className="btn bg-red-600 text-white hover:bg-red-400">
+              className="btn bg-red-600 border-0 text-white hover:bg-red-400">
               Delete
             </button>
           </div>

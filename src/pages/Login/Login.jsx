@@ -41,34 +41,38 @@ const Login = () => {
 
   return (
     <div>
-      <div className="hero min-h-scree">
+      <div>
         <div className="hero-content flex-col">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white">Login now!</h1>
+            <h1 className="text-5xl font-bold mb-5">Login now!</h1>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-pink-200 shadow-2xl">
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-fuchsia-400 shadow-2xl">
             <form onSubmit={handleLoginSubmit} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-semibold ">Email</span>
+                  <span className="label-text text-lg font-semibold">
+                    Email
+                  </span>
                 </label>
                 <input
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="input input-bordered focus:text-pink-600 placeholder:font"
+                  className="input input-bordered text-lg focus:text-fuchsia-600"
                   required
                 />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-semibold">Password</span>
+                  <span className="label-text text-lg font-semibold">
+                    Password
+                  </span>
                 </label>
                 <input
                   type="password"
                   name="password"
                   placeholder="Enter your password"
-                  className="input input-bordered focus:text-pink-600"
+                  className="input input-bordered text-lg  focus:text-fuchsia-600"
                   required
                 />
               </div>
@@ -88,7 +92,7 @@ const Login = () => {
                   <FcGoogle className="text-2xl"></FcGoogle>
                 </button>
               </div>
-              <p className="text-lg">
+              <p className="text-lg text-center">
                 New Here?{" "}
                 <Link to="/register">
                   <span className="font-bold text-pink-600">Register Now!</span>

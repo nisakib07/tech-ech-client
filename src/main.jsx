@@ -51,7 +51,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products/${params.brand}`),
+          fetch(
+            `https://assignmentb8-10-server.vercel.app/products/${params.brand}`
+          ),
       },
       {
         path: "/products1/updateProduct/:_id",
@@ -61,7 +63,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products1/${params._id}`),
+          fetch(
+            `https://assignmentb8-10-server.vercel.app/products1/${params._id}`
+          ),
       },
       {
         path: "/details/:_id",
@@ -71,17 +75,11 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/products1/${params._id}`),
+          fetch(
+            `https://assignmentb8-10-server.vercel.app/products1/${params._id}`
+          ),
       },
-      // {
-      //   path: "/cart",
-      //   element: (
-      //     <PrivateRoute>
-      //       <Cart></Cart>
-      //     </PrivateRoute>
-      //   ),
-      //   loader: () => fetch("http://localhost:5000/cart"),
-      // },
+
       {
         path: "/cart/:username",
         element: (
@@ -90,7 +88,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/cart/${params.username}`),
+          fetch(
+            `https://assignmentb8-10-server.vercel.app/cart/${params.username}`
+          ),
       },
     ],
   },

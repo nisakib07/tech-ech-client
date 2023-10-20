@@ -12,7 +12,6 @@ import ShowProducts from "../../components/ShowProducts/ShowProducts";
 const Products = () => {
   const products = useLoaderData();
 
-  products;
   console.log(products);
 
   return (
@@ -40,12 +39,16 @@ const Products = () => {
       </div>
       {products.length > 0 ? (
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8 px-5">
-          {products.map((product) => (
-            <ShowProducts key={product._id} product={product}></ShowProducts>
-          ))}
+          {products &&
+            products?.map((product) => (
+              <ShowProducts key={product._id} product={product}></ShowProducts>
+            ))}
         </div>
       ) : (
-        <p>Hello</p>
+        <div className="text-center mt-10">
+          <p className="text-4xl font-bold mb-4">Sorry! </p>
+          <p className="text-xl">There is no product available of this brand</p>
+        </div>
       )}
     </div>
   );

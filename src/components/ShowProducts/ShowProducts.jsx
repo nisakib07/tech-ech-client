@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 const ShowProducts = ({ product }) => {
   const { _id, name, brand, type, price, description, rating, photo } = product;
   return (
-    <div key={product._id} className="card card-compact bg-base-100 shadow-xl">
+    <div key={product._id} className="card bg-transparent shadow-2xl py-5">
       <figure>
-        <img src={photo} alt="Shoes" />
+        <img className="h-[200px]" src={photo} alt="Shoes" />
       </figure>
       <div className="card-body">
         <h2 className="text-center text-2xl mt-3">{name}</h2>

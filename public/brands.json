@@ -2,31 +2,49 @@
   {
     "id": 1,
     "name": "Apple",
-    "image": "https://i.ibb.co/d5HB9Cp/apple.jpg"
+    "image": "https://i.ibb.co/d5HB9Cp/apple.jpg",
+    "slider1": "https://i.ibb.co/qNWBSTP/apple-banner1.jpg",
+    "slider2": "https://i.ibb.co/qNWBSTP/apple-banner1.jpg",
+    "slider3": "https://i.ibb.co/qNWBSTP/apple-banner1.jpg"
   },
   {
     "id": 2,
     "name": "Samsung",
-    "image": "https://i.ibb.co/98Q86NC/samsung.png"
+    "image": "https://i.ibb.co/98Q86NC/samsung.png",
+    "slider1": "https://i.ibb.co/c1MRttb/samsung-banner-1.jpg",
+    "slider2": "https://i.ibb.co/c1MRttb/samsung-banner-1.jpg",
+    "slider3": "https://i.ibb.co/c1MRttb/samsung-banner-1.jpg"
   },
   {
     "id": 3,
     "name": "Google",
-    "image": "https://i.ibb.co/KbpLP3k/google.png"
+    "image": "https://i.ibb.co/KbpLP3k/google.png",
+    "slider1": "https://i.ibb.co/PwzJhyH/google-banner-1.jpg",
+    "slider2": "https://i.ibb.co/PwzJhyH/google-banner-1.jpg",
+    "slider3": "https://i.ibb.co/PwzJhyH/google-banner-1.jpg"
   },
   {
     "id": 4,
     "name": "Microsoft",
-    "image": "https://i.ibb.co/sWG4dYK/microsoft.jpg"
+    "image": "https://i.ibb.co/sWG4dYK/microsoft.jpg",
+    "slider1": "https://i.ibb.co/898gxDV/mico-banner-1.jpg",
+    "slider2": "https://i.ibb.co/898gxDV/mico-banner-1.jpg",
+    "slider3": "https://i.ibb.co/898gxDV/mico-banner-1.jpg"
   },
   {
     "id": 5,
     "name": "Amazon",
-    "image": "https://i.ibb.co/M7vTb80/amazon.png"
+    "image": "https://i.ibb.co/M7vTb80/amazon.png",
+    "slider1": "https://i.ibb.co/Z64CXmt/amazon-banner-1.jpg",
+    "slider2": "https://i.ibb.co/Z64CXmt/amazon-banner-1.jpg",
+    "slider3": "https://i.ibb.co/Z64CXmt/amazon-banner-1.jpg"
   },
   {
     "id": 6,
     "name": "Sony",
-    "image": "https://i.ibb.co/ggrp1HC/sony.jpg"
+    "image": "https://i.ibb.co/ggrp1HC/sony.jpg",
+    "slider1": "https://i.ibb.co/JKBHRmV/sony-banner-1.jpg",
+    "slider2": "https://i.ibb.co/JKBHRmV/sony-banner-1.jpg",
+    "slider3": "https://i.ibb.co/JKBHRmV/sony-banner-1.jpg"
   }
 ]

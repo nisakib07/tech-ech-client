@@ -43,53 +43,59 @@ const Register = () => {
   };
   return (
     <div>
-      <div className="hero min-h-scree">
+      <div>
         <div className="hero-content flex-col">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-white">Register now!</h1>
+            <h1 className="text-5xl font-bold mb-5">Register now!</h1>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-pink-200 shadow-2xl">
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-fuchsia-400 shadow-2xl">
             <form onSubmit={handleRegisterSubmit} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-semibold ">Name</span>
+                  <span className="label-text text-lg font-semibold">Name</span>
                 </label>
                 <input
                   type="text"
                   name="name"
                   placeholder="Enter your name"
-                  className="input input-bordered focus:text-fuchsia-600 placeholder:font"
+                  className="input input-bordered text-lg focus:text-fuchsia-600"
                   required
                 />
                 <label className="label">
-                  <span className="label-text font-semibold ">Photo</span>
+                  <span className="label-text text-lg font-semibold">
+                    Photo
+                  </span>
                 </label>
                 <input
                   type="text"
                   name="photo"
                   placeholder="Enter photoURL"
-                  className="input input-bordered focus:text-pink-600 placeholder:font"
+                  className="input input-bordered text-lg focus:text-fuchsia-600"
                 />
                 <label className="label">
-                  <span className="label-text font-semibold ">Email</span>
+                  <span className="label-text text-lg font-semibold">
+                    Email
+                  </span>
                 </label>
                 <input
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="input input-bordered focus:text-pink-600 placeholder:font"
+                  className="input input-bordered text-lg focus:text-fuchsia-600"
                   required
                 />
               </div>
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text font-semibold">Password</span>
+                  <span className="label-text text-lg font-semibold">
+                    Password
+                  </span>
                 </label>
                 <input
                   type="password"
                   name="password"
                   placeholder="Enter your password"
-                  className="input input-bordered focus:text-pink-600"
+                  className="input input-bordered text-lg focus:text-fuchsia-600"
                   required
                 />
               </div>
@@ -100,7 +106,7 @@ const Register = () => {
                   value="Register"
                 />
               </div>
-              <p className="text-lg">
+              <p className="text-lg text-center">
                 Already have an account?
                 <Link to="/login">
                   <span className="font-bold ml-1 text-pink-600">Login!</span>
