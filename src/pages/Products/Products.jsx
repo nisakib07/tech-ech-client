@@ -26,7 +26,7 @@ const Products = () => {
   }, [brand]);
 
   return (
-    <div className="mt-10">
+    <div className="mt-24">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -42,10 +42,10 @@ const Products = () => {
         className="mySwiper bg-fuchsia-700 dark:bg-slate-700">
         {slider.map((singleSlider, idx) => (
           <SwiperSlide key={idx} singleSlider={singleSlider}>
-            <div className="h-[400px]">
+            <div className="h-[800px] lg:h-[400px]">
               <div className="flex flex-col lg:flex-row justify-around items-center">
                 <div>
-                  <h2 className="text-4xl font-bold text-white">
+                  <h2 className="text-4xl font-bold text-center lg:text-left px-4 lg:px-0 text-white">
                     <span className="text-orange-400">Explore</span> <br /> the
                     true meaning of tech with <br />{" "}
                     <span className="text-amber-400">{brand}</span>
