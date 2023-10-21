@@ -70,7 +70,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
           <img
-            className="w-1/3 lg:w-1/6"
+            className="w-1/3 md:w-1/6"
             src="https://i.ibb.co/GQZjhDb/Logo-removebg-preview.png"
             alt=""
           />
