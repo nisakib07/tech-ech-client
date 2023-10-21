@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const UpdateProduct = () => {
   const product = useLoaderData();
-  const { name, brand, type, price, description, rating, photo, _id } = product;
+  const { name, brand, type, price, rating, photo, _id } = product;
   console.log(_id);
   const handleUpdateProduct = (e) => {
     e.preventDefault();
@@ -123,20 +123,6 @@ const UpdateProduct = () => {
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text text-lg font-semibold">
-                      Description
-                    </span>
-                  </label>
-                  <input
-                    type="text"
-                    placeholder="Description"
-                    defaultValue={description}
-                    name="description"
-                    className="input input-bordered text-lg  focus:text-fuchsia-600"
-                  />
-                </div>
-                <div className="form-control">
-                  <label className="label">
-                    <span className="label-text text-lg font-semibold">
                       Rating
                     </span>
                   </label>
@@ -148,23 +134,26 @@ const UpdateProduct = () => {
                     className="input input-bordered text-lg  focus:text-fuchsia-600"
                   />
                 </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text text-lg font-semibold">
+                      Photo
+                    </span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Photo URL"
+                    defaultValue={photo}
+                    name="photo"
+                    className="input input-bordered text-lg focus:text-fuchsia-600"
+                  />
+                </div>
               </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-lg font-semibold">
-                    Photo
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Photo URL"
-                  defaultValue={photo}
-                  name="photo"
-                  className="input input-bordered text-lg focus:text-fuchsia-600"
-                />
-              </div>
+
               <div className="form-control mt-6">
-                <button className="btn bg-fuchsia-600 text-white" type="submit">
+                <button
+                  className="btn bg-fuchsia-600 border-0 hover:bg-fuchsia-500 text-white"
+                  type="submit">
                   Update
                 </button>
               </div>

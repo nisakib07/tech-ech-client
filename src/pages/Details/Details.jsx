@@ -54,7 +54,7 @@ const Details = () => {
           </div>
           <button
             onClick={handleAddToCart}
-            className="btn w-full bg-green-600 text-white hover:bg-green-500">
+            className="btn w-full border-0 bg-green-600 text-white hover:bg-green-500">
             Add to Cart
           </button>
         </div>

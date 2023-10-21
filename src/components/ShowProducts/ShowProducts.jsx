@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const ShowProducts = ({ product }) => {
-  const { _id, name, brand, type, price, description, rating, photo } = product;
+  const { _id, name, brand, type, price, rating, photo } = product;
   return (
     <div key={product._id} className="card bg-transparent shadow-2xl py-5">
       <figure>
@@ -22,7 +22,6 @@ const ShowProducts = ({ product }) => {
           <p>Price : ${price}</p>
           <p>Rating : {rating}/5</p>
         </div>
-        <p className="text-lg">{description}</p>
       </div>
 
       <div className="flex justify-around">

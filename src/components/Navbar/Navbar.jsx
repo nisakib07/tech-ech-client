@@ -39,9 +39,6 @@ const Navbar = () => {
         <NavLink to={`/cart/${username}`}>My Cart</NavLink>
       </li>
       <li>
-        <NavLink to="/login">Login</NavLink>
-      </li>
-      <li>
         <NavLink to="/register">Register</NavLink>
       </li>
     </>
@@ -71,7 +68,14 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="font-bold text-2xl">TechEch</a>
+        <div className="flex items-center">
+          <img
+            className="w-1/6"
+            src="https://i.ibb.co/GQZjhDb/Logo-removebg-preview.png"
+            alt=""
+          />
+          <a className="font-bold text-2xl">TechEch</a>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
