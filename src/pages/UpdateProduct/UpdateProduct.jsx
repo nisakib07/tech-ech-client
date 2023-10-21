@@ -52,7 +52,7 @@ const UpdateProduct = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold mb-5">Update Product</h1>
           </div>
-          <div className="card flex-shrink-0 w-full shadow-2xl bg-base-100">
+          <div className="card flex-shrink-0 w-full shadow-2xl bg-fuchsia-400">
             <form onSubmit={handleUpdateProduct} className="card-body">
               {/* Name and Brand */}
               <div className="flex flex-col lg:flex-row gap-4">

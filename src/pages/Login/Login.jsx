@@ -46,7 +46,7 @@ const Login = () => {
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-5">Login now!</h1>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-fuchsia-400 shadow-2xl">
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-fuchsia-400 dark:bg-slate-400 shadow-2xl">
             <form onSubmit={handleLoginSubmit} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -78,7 +78,7 @@ const Login = () => {
               </div>
               <div className="form-control mt-6">
                 <input
-                  className="btn border-none bg-pink-700 text-white hover:bg-pink-500"
+                  className="btn border-none bg-fuchsia-600 dark:bg-slate-600 text-white hover:bg-pink-500"
                   type="submit"
                   value="Login"
                 />
@@ -95,7 +95,9 @@ const Login = () => {
               <p className="text-lg text-center">
                 New Here?{" "}
                 <Link to="/register">
-                  <span className="font-bold text-pink-600">Register Now!</span>
+                  <span className="font-bold text-fuchsia-600 dark:text-slate-600">
+                    Register Now!
+                  </span>
                 </Link>
               </p>
             </form>

@@ -39,7 +39,7 @@ const Products = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper bg-fuchsia-700">
+        className="mySwiper bg-fuchsia-700 dark:bg-slate-700">
         {slider.map((singleSlider, idx) => (
           <SwiperSlide key={idx} singleSlider={singleSlider}>
             <div className="h-[400px]">

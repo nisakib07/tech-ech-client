@@ -5,7 +5,7 @@ import { ToastContainer } from "react-toastify";
 
 const Layout = () => {
   return (
-    <div className="max-w-screen-xl mx-auto bg-fuchsia-300">
+    <div className="max-w-screen-xl mx-auto bg-fuchsia-300 dark:bg-slate-500">
       <Navbar></Navbar>
       <Outlet></Outlet>
       <Footer></Footer>

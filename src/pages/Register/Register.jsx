@@ -48,7 +48,7 @@ const Register = () => {
           <div className="text-center">
             <h1 className="text-5xl font-bold mb-5">Register now!</h1>
           </div>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-fuchsia-400 shadow-2xl">
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-transparent bg-fuchsia-400 dark:bg-slate-400 shadow-2xl">
             <form onSubmit={handleRegisterSubmit} className="card-body">
               <div className="form-control">
                 <label className="label">
@@ -101,7 +101,7 @@ const Register = () => {
               </div>
               <div className="form-control mt-6">
                 <input
-                  className="btn border-none bg-pink-700 text-white hover:bg-pink-500"
+                  className="btn border-none bg-fuchsia-600 text-white dark:bg-slate-600 hover:bg-fuchsia-500"
                   type="submit"
                   value="Register"
                 />
@@ -109,7 +109,9 @@ const Register = () => {
               <p className="text-lg text-center">
                 Already have an account?
                 <Link to="/login">
-                  <span className="font-bold ml-1 text-pink-600">Login!</span>
+                  <span className="font-bold ml-1 text-fuchsia-600 dark:text-slate-600">
+                    Login!
+                  </span>
                 </Link>
               </p>
             </form>

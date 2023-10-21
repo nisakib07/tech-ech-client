@@ -1,9 +1,24 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { BiSun } from "react-icons/bi";
+import { BsMoonStars } from "react-icons/bs";
 
 const Navbar = () => {
   const { user, userSignOut } = useContext(AuthContext);
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleThemeSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   const email = user?.email ? user.email : "";
   const username = email.split("@")[0] || null;
@@ -62,6 +77,17 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
+        <button className="btn mr-3 " onClick={handleThemeSwitch}>
+          {theme === "dark" ? (
+            <div className="text-2xl">
+              <BiSun></BiSun>
+            </div>
+          ) : (
+            <div className="text-2xl">
+              <BsMoonStars></BsMoonStars>
+            </div>
+          )}
+        </button>
         <div className="flex-none">
           {user ? (
             <div className="dropdown dropdown-end">

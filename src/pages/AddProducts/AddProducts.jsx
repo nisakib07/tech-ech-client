@@ -40,7 +40,7 @@ const AddProducts = () => {
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold mb-5">Add Product</h1>
         </div>
-        <div className="card flex-shrink-0 w-full shadow-2xl bg-fuchsia-400">
+        <div className="card flex-shrink-0 w-full shadow-2xl bg-fuchsia-400 dark:bg-slate-400">
           <form onSubmit={handleAddProducts} className="card-body">
             {/* Name and Brand */}
             <div className="flex flex-col lg:flex-row gap-4">
@@ -140,7 +140,7 @@ const AddProducts = () => {
             </div>
             <div className="form-control mt-6">
               <button
-                className="btn bg-fuchsia-600 text-white border-0 hover:bg-fuchsia-500"
+                className="btn bg-fuchsia-600 dark:bg-slate-600 text-white border-0 hover:bg-fuchsia-500"
                 type="submit">
                 Add Product
               </button>

@@ -41,7 +41,7 @@ const Details = () => {
 
   return (
     <div className="mt-32">
-      <div className="flex flex-col lg:flex-row items-center justify-around border-b-4 px-10 pb-5">
+      <div className="flex flex-col lg:flex-row items-center justify-around border-b-2 px-10 pb-5 lg:mx-4">
         <div>
           <img className="w-full" src={photo} alt="" />
         </div>
@@ -60,7 +60,7 @@ const Details = () => {
         </div>
       </div>
 
-      <div className="mt-5 text-lg">
+      <div className="mt-5 text-lg px-2 lg:px-5">
         <p>{description}</p>
       </div>
       <ToastContainer pauseOnHover={false} autoClose={2000}></ToastContainer>
