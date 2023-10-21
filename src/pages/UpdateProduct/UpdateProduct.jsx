@@ -14,7 +14,6 @@ const UpdateProduct = () => {
     const brand = form.brand.value;
     const type = form.type.value;
     const price = form.price.value;
-    const description = form.description.value;
     const rating = form.rating.value;
     const photo = form.photo.value;
 
@@ -23,7 +22,6 @@ const UpdateProduct = () => {
       brand,
       type,
       price,
-      description,
       rating,
       photo,
     };
@@ -48,9 +46,9 @@ const UpdateProduct = () => {
   return (
     <div>
       <div className="hero min-h-screen">
-        <div className="hero-content flex-col">
+        <div className="hero-content flex-col p-0">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold mb-5">Update Product</h1>
+            <h1 className="text-5xl font-bold my-5">Update Product</h1>
           </div>
           <div className="card flex-shrink-0 w-full shadow-2xl bg-fuchsia-400">
             <form onSubmit={handleUpdateProduct} className="card-body">

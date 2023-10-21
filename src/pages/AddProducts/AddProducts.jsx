@@ -36,39 +36,39 @@ const AddProducts = () => {
 
   return (
     <div className="hero min-h-screen">
-      <div className="hero-content flex-col">
+      <div className="hero-content flex-col p-0">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold mb-5">Add Product</h1>
+          <h1 className="text-5xl font-bold my-5">Add Product</h1>
         </div>
-        <div className="card flex-shrink-0 w-full shadow-2xl bg-fuchsia-400 dark:bg-slate-400">
+        <div className="card flex-shrink-0 shadow-2xl bg-fuchsia-400 dark:bg-slate-400">
           <form onSubmit={handleAddProducts} className="card-body">
             {/* Name and Brand */}
-            <div className="flex flex-col lg:flex-row gap-4">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-lg font-semibold">Name</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Name"
-                  name="name"
-                  className="input input-bordered text-lg  focus:text-fuchsia-600"
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text text-lg font-semibold">
-                    Brand Name
-                  </span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Brand"
-                  name="brand"
-                  className="input input-bordered text-lg  focus:text-fuchsia-600"
-                />
-              </div>
+
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text text-lg font-semibold">Name</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Name"
+                name="name"
+                className="input input-bordered text-lg  focus:text-fuchsia-600"
+              />
             </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text text-lg font-semibold">
+                  Brand Name
+                </span>
+              </label>
+              <input
+                type="text"
+                placeholder="Brand"
+                name="brand"
+                className="input input-bordered text-lg  focus:text-fuchsia-600"
+              />
+            </div>
+            {/* </div> */}
 
             {/* Type and Price */}
             <div className="flex flex-col lg:flex-row gap-4">

@@ -70,7 +70,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center">
           <img
-            className="w-1/6"
+            className="w-1/3 lg:w-1/6"
             src="https://i.ibb.co/GQZjhDb/Logo-removebg-preview.png"
             alt=""
           />
@@ -81,7 +81,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
       <div className="navbar-end">
-        <button className="btn mr-3 " onClick={handleThemeSwitch}>
+        <button className="btn mr-2" onClick={handleThemeSwitch}>
           {theme === "dark" ? (
             <div className="text-2xl">
               <BiSun></BiSun>

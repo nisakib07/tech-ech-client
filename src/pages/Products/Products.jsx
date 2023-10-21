@@ -26,7 +26,7 @@ const Products = () => {
   }, [brand]);
 
   return (
-    <div className="mt-24">
+    <div className="mt-36 lg:mt-24">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
