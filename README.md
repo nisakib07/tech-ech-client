@@ -11,3 +11,9 @@ TechEch Live Site Link- https://light-van.surge.sh
 - In the page of the products of any individual brand, there is slider with advertisement
 - User can toggle between dark theme and light theme
 - User can log in by registering with email and pass and also through google login
+
+## Technologies Used
+
+<b>Front End</b> : HTML, CSS, Tailwind, React, JavaScript
+<br>
+<b>Back End</b> : Node.js, MongoDb
